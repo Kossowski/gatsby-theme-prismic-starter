@@ -1,4 +1,4 @@
-# 🌈 gatsby-theme-prismic-default
+# 🌈 gatsby-theme-prismic-starter
 
 A Gatsby Starter Theme with Headless CMS Prismic. Based on [gatsby-starter-default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/).
 
