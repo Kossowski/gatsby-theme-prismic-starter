@@ -36,7 +36,7 @@ module.exports = themeOptions => {
       {
         resolve: `gatsby-plugin-page-creator`,
         options: {
-          path: path.join(__dirname, "src", "pages"),
+          path: path.join(__dirname, 'src', 'pages'),
         },
       },
       `gatsby-plugin-emotion`,
@@ -47,6 +47,12 @@ module.exports = themeOptions => {
           accessToken: themeOptions.accessToken
             ? themeOptions.accessToken
             : `${process.env.API_KEY}`,
+        },
+      },
+      {
+        resolve: `gatsby-plugin-typography`,
+        options: {
+          pathToConfigModule: themeOptions.pathToConfigModule ? themeOptions.pathToConfigModule : `${__dirname}/config/typography.js`,
         },
       },
       `gatsby-transformer-sharp`,
