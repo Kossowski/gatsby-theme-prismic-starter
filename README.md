@@ -1,0 +1,1 @@
+# gatsby-theme-prismic-default
