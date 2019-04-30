@@ -4,7 +4,7 @@ const mkdirp = require('mkdirp')
 
 // make sure src/pages exists for the filesystem source
 exports.onPreBootstrap = ({ store }) => {
-  const debug = Debug('gatsby-theme-blog-core:onPreBoostrap')
+  const debug = Debug('gatsby-theme-prismic-starter:onPreBoostrap')
 
   const { program } = store.getState()
   const dir = `${program.directory}/src/pages`

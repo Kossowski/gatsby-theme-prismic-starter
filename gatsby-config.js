@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `.env`,
 })
 
+const path = require('path')
+
 module.exports = themeOptions => {
   return {
     siteMetadata: {
@@ -19,6 +21,12 @@ module.exports = themeOptions => {
     plugins: [
       `gatsby-plugin-react-helmet`,
       {
+        resolve: 'gatsby-plugin-compile-es6-packages',
+        options: {
+          modules: ['gatsby-theme-prismic-starter'],
+        },
+      },
+      {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `images`,
@@ -28,7 +36,7 @@ module.exports = themeOptions => {
       {
         resolve: `gatsby-plugin-page-creator`,
         options: {
-          path: `${__dirname}/src/pages`,
+          path: path.join(__dirname, "src", "pages"),
         },
       },
       `gatsby-plugin-emotion`,
@@ -63,12 +71,6 @@ module.exports = themeOptions => {
           icon: themeOptions.icon
             ? themeOptions.icon
             : `${__dirname}/src/images/gatsby-icon.png`,
-        },
-      },
-      {
-        resolve: 'gatsby-plugin-compile-es6-packages',
-        options: {
-          modules: ['gatsby-theme-prismic-starter'],
         },
       },
       `gatsby-plugin-sitemap`,

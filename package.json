@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-prismic-starter",
   "description": "A Gatsby Starter Theme With Prismic CMS",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "index.js",
   "author": "Dennis Kossowski <development@denniskossowski.de> (https://denniskossowski.de/)",
   "dependencies": {
