@@ -5,10 +5,11 @@ A Gatsby Starter Theme with Headless CMS Prismic. Based on [gatsby-starter-defau
 ## Instructions 
 ### Quick Start
 
-1. create a directory for your new Website
-2. initial your package.json with `yarn init` or `npm init`
+1. create a directory for your new website
+2. initial your package.json with `yarn init`
 3. install the Theme with `yarn add gatsby-theme-prismic-default`
-4. add a `gatsby-config.js` file to activate and controll the Theme:
+4. add a `gatsby-config.js` file to activate and controll the theme:
+
    ```javasript
    module.exports = {
    __experimentalThemes: [
@@ -34,10 +35,11 @@ A Gatsby Starter Theme with Headless CMS Prismic. Based on [gatsby-starter-defau
         repositoryName: "your-prismic-repository-name",
         // It's highly recommended to define your Prismic API access token trough a .env file
         // Just create a .env in your root directory with following content: "API_KEY="your-key-here"
-        // If you want to define the access token inline you can do it with (on your own risc):
+        // If you want to define the access token inline you can do it with (at your own risk):
         //accessToken: "your-access-token",
       }
     }
     ]};
    ```
+
 5. Build your site!
