@@ -7,9 +7,8 @@ A Gatsby Starter Theme with Headless CMS Prismic. Based on [gatsby-starter-defau
 
 1. create a directory for your new website
 2. initial your package.json with `yarn init`
-3. install gatsby, react and react-dom `yarn add gatsby react react-dom`
-4. install the theme with `yarn add gatsby-theme-prismic-default`
-5. add a `gatsby-config.js` file to activate and controll the theme:
+3. install gatsby, react and react-dom and the theme `yarn add gatsby react react-dom gatsby-theme-prismic-starter`
+4. add a `gatsby-config.js` file to activate and controll the theme:
 
    ```javasript
    module.exports = {
@@ -43,4 +42,4 @@ A Gatsby Starter Theme with Headless CMS Prismic. Based on [gatsby-starter-defau
     ]};
    ```
 
-6. Build your site!
+5. run `gatsby develop` and build your site!
