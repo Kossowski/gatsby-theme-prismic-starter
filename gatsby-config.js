@@ -65,12 +65,6 @@ module.exports = themeOptions => {
             : `${__dirname}/src/images/gatsby-icon.png`,
         },
       },
-      {
-        resolve: 'gatsby-plugin-typography',
-        options: {
-          pathToConfigModule: `${__dirname}/config/typography.js`,
-        },
-      },
       `gatsby-plugin-sitemap`,
       `gatsby-plugin-netlify`,
     ],

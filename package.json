@@ -1,9 +1,9 @@
 {
   "name": "gatsby-theme-prismic-starter",
   "description": "A Gatsby Starter Theme With Prismic CMS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
-  "author": "Dennis Kossowski <development@denniskossowski.de>",
+  "author": "Dennis Kossowski <development@denniskossowski.de> (https://denniskossowski.de/)",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
@@ -42,7 +42,12 @@
   "keywords": [
     "gatsby",
     "theme",
+    "gatsby-theme",
     "prismic"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kossowski/gatsby-theme-prismic-starter"
+  }
 }

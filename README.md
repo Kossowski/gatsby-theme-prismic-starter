@@ -7,7 +7,7 @@ A Gatsby Starter Theme with Headless CMS Prismic. Based on [gatsby-starter-defau
 
 1. create a directory for your new website
 2. initial your package.json with `yarn init`
-3. install the Theme with `yarn add gatsby-theme-prismic-default`
+3. install the theme with `yarn add gatsby-theme-prismic-default`
 4. add a `gatsby-config.js` file to activate and controll the theme:
 
    ```javasript
