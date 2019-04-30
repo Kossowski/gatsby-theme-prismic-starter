@@ -65,6 +65,12 @@ module.exports = themeOptions => {
             : `${__dirname}/src/images/gatsby-icon.png`,
         },
       },
+      {
+        resolve: 'gatsby-plugin-compile-es6-packages',
+        options: {
+          modules: ['gatsby-theme-prismic-starter'],
+        },
+      },
       `gatsby-plugin-sitemap`,
       `gatsby-plugin-netlify`,
     ],
