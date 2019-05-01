@@ -57,6 +57,7 @@ module.exports = themeOptions => {
       },
       `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
+      `gatsby-mdx`,
       {
         resolve: `gatsby-plugin-manifest`,
         options: {

@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-prismic-starter",
   "description": "A Gatsby Starter Theme With Prismic CMS",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "index.js",
   "author": "Dennis Kossowski <development@denniskossowski.de> (https://denniskossowski.de/)",
   "dependencies": {
@@ -10,9 +10,13 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@mdx-js/mdx": "^1.0.16",
+    "@mdx-js/react": "^1.0.16",
+    "@mdx-js/tag": "^0.20.3",
     "dotenv": "^7.0.0",
     "emotion-theming": "^10.0.10",
     "gatsby-image": "^2.0.40",
+    "gatsby-mdx": "^0.6.3",
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-manifest": "^2.0.29",
@@ -33,13 +37,13 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
-    "gatsby": "^2.3.33",
+    "gatsby": "^2.3.34",
     "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "peerDependencies": {
-    "gatsby": "^2.3.33",
+    "gatsby": "^2.3.34",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
