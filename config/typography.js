@@ -29,7 +29,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   scaleRatio: 3.157,
-  headerWeight: 300,
+  headerWeight: 600,
 })
 
 export default typography
