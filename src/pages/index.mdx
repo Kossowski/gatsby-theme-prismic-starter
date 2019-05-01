@@ -1,0 +1,47 @@
+import { graphql, Link } from 'gatsby'
+import styled from '@emotion/styled'
+
+import SEO from '../components/seo'
+
+<SEO title="READ ME" keywords={[`gatsby`, `application`, `react`]} />
+
+# 🌈 **gatsby-theme-prismic-starter**
+---
+### All your current pages:
+#### Just add a page in your `src/pages` folder and see how it works! [MDX](https://gatsby-mdx.netlify.com/) is also supported! <br /> To overwrite this index.mdx just create another index file in your pages folder. 
+
+<div>
+  {props.data.allSitePage.edges.map(({ node }, i) => (
+    <Link to={node.path} key={props.i}>
+      <p style={{ backgroundColor: '#fafbfc' }}>{node.path}</p>
+    </Link>
+  ))}
+</div>
+
+### ⚠️⚠️ **Gatsby Themes are currently experimental** ⚠️⚠️
+***
+A Gatsby Starter Theme with Headless CMS [Prismic](https://prismic.io). Based on [gatsby-starter-default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/).
+
+[Github Repository](https://github.com/kossowski/gatsby-theme-prismic-starter). Created by [Dennis Kossowski](https://denniskossowski.de)
+
+export default ({ children }) => {
+  const StyledWrapper = styled.div`
+    width: 100%;
+    max-width: 980px;
+    padding: 24px;
+    margin: 0 auto;
+  `
+  return <StyledWrapper>{children}</StyledWrapper>
+}
+
+export const pageQuery = graphql`
+  query {
+    allSitePage {
+      edges {
+        node {
+          path
+        }
+      }
+    }
+  }
+`
