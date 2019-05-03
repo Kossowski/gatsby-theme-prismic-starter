@@ -7,6 +7,8 @@ A Gatsby Starter Theme with Headless CMS [Prismic](https://prismic.io). Based on
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/gatsby-theme-prismic-starter.svg)](https://badge.fury.io/js/gatsby-theme-prismic-starter)
 
+<br />
+
 ## 🚀 Instructions 
 ### Quick Start
 
@@ -55,6 +57,8 @@ A Gatsby Starter Theme with Headless CMS [Prismic](https://prismic.io). Based on
 
 __After you started the develop server, open `localhost:8000/` for further information how this theme works!__
 
+<br />
+
 ## 🤔 What's inside
 ### Dependencies:
 - `@emotion/core`
@@ -88,12 +92,31 @@ __After you started the develop server, open `localhost:8000/` for further infor
 >__`mdx-plugin`__ for JSX in Markdown <br />
 >__`gatsby-source-prismic`__ for pulling data into Gatsby from prismic.io repositories
 
+### Components:
+- `seo.js`
+>Include the SEO component `import { SEO } from 'gatsby-theme-prismic-starter'`
 
 ***
+<br />
 
 ## 🔄 Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.1.0]() – 2019-05-03
+### ⚠️ Removed
+__Dependencies:__
+>- `@fortawesome/fontawesome-svg-core`
+>- `@fortawesome/free-solid-svg-icons`
+>- `@fortawesome/react-fontawesome`
+>- `gatsby-plugin-netlify`
+>- `react-grid-system`
+
+Removed this packages to make the theme more flexible if you want to use other similar dependencies.
+
+If you have used this packages just reinstall them in your project.
+
+### Added
+
 ## [0.0.8]() – 2019-05-01
 ### Added
-- NEW: [mdx](https://gatsby-mdx.netlify.com) support ✨ Just add a .mdx file in your pages folder
+>- NEW: [mdx](https://gatsby-mdx.netlify.com) support ✨ Just add a .mdx file in your pages folder
