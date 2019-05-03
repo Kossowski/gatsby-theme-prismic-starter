@@ -5,21 +5,43 @@ import SEO from '../components/seo'
 
 <SEO title="READ ME" keywords={[`gatsby`, `application`, `react`]} />
 
+#### ⚠️ **Gatsby Themes are currently experimental**
 # 🌈 **gatsby-theme-prismic-starter**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/gatsby-theme-prismic-starter.svg)](https://badge.fury.io/js/gatsby-theme-prismic-starter)
+<div>
+  {props.data.allSitePlugin.edges.map(({ node }) => (
+    <code style="background-color: #eeeeee; padding: 10px;"> ℹ️ Your current installed version: {node.packageJson.version}</code>
+  ))}
+</div>
+
+<br />
+
 ---
+
 ### All your current pages:
-#### Just add a page in your `src/pages` folder and see how it works! [MDX](https://gatsby-mdx.netlify.com/) is also supported! <br /> To overwrite this index.mdx just create another index file in your pages folder. 
+
+ Just add a page in your `src/pages` folder and see how it works! [MDX](https://gatsby-mdx.netlify.com/) is also supported! <br /> To overwrite this index.mdx just create another index file in your pages folder.
 
 <div>
+  <code>Total Count: {props.data.allSitePage.totalCount}</code>
+</div>
+
+<div>
+  <code>
   {props.data.allSitePage.edges.map(({ node }, i) => (
     <Link to={node.path} key={props.i}>
       <p style={{ backgroundColor: '#fafbfc' }}>{node.path}</p>
     </Link>
   ))}
+  </code>
 </div>
 
-### ⚠️⚠️ **Gatsby Themes are currently experimental** ⚠️⚠️
-***
+<br />
+
+---
+
 A Gatsby Starter Theme with Headless CMS [Prismic](https://prismic.io). Based on [gatsby-starter-default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/).
 
 [Github Repository](https://github.com/kossowski/gatsby-theme-prismic-starter). Created by [Dennis Kossowski](https://denniskossowski.de)
@@ -37,9 +59,20 @@ export default ({ children }) => {
 export const pageQuery = graphql`
   query {
     allSitePage {
+      totalCount
       edges {
         node {
           path
+        }
+      }
+    }
+    allSitePlugin(filter: { name: { eq: "gatsby-theme-prismic-starter" } }) {
+      edges {
+        node {
+          packageJson {
+            version
+            name
+          }
         }
       }
     }
