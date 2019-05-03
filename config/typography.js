@@ -2,7 +2,7 @@ import Typography from 'typography'
 
 const typography = new Typography({
   title: 'gatsby-theme-prismic-starter',
-  baseFontSize: '20px',
+  baseFontSize: '18px',
   baseLineHeight: 1.75,
   headerFontFamily: [
     '-apple-system',
