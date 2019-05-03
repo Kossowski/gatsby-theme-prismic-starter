@@ -52,7 +52,9 @@ module.exports = themeOptions => {
       {
         resolve: `gatsby-plugin-typography`,
         options: {
-          pathToConfigModule: themeOptions.pathToConfigModule ? themeOptions.pathToConfigModule : `${__dirname}/config/typography.js`,
+          pathToConfigModule: themeOptions.pathToConfigModule
+            ? themeOptions.pathToConfigModule
+            : `${__dirname}/config/typography.js`,
         },
       },
       `gatsby-transformer-sharp`,
@@ -81,7 +83,6 @@ module.exports = themeOptions => {
         },
       },
       `gatsby-plugin-sitemap`,
-      `gatsby-plugin-netlify`,
     ],
   }
 }
