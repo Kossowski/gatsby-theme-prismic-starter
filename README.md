@@ -102,7 +102,7 @@ __After you started the develop server, open `localhost:8000/` for further infor
 ## 🔄 Changelog
 All notable changes to this project will be documented in this file.
 
-## [0.1.0]() – 2019-05-03
+## [0.1.0] – 2019-05-03
 ### ⚠️ Removed
 __Dependencies:__
 >- `@fortawesome/fontawesome-svg-core`
@@ -115,8 +115,6 @@ Removed this packages to make the theme more flexible if you want to use other s
 
 If you have used this packages just reinstall them in your project.
 
-### Added
-
-## [0.0.8]() – 2019-05-01
+## [0.0.8] – 2019-05-01
 ### Added
 >- NEW: [mdx](https://gatsby-mdx.netlify.com) support ✨ Just add a .mdx file in your pages folder

@@ -20,19 +20,17 @@ import SEO from '../components/seo'
 
 ---
 
-### All your current pages:
-
- Just add a page in your `src/pages` folder and see how it works! [MDX](https://gatsby-mdx.netlify.com/) is also supported! <br /> To overwrite this index.mdx just create another index file in your pages folder.
+Just add a page in your `src/pages` folder and see how it works! [MDX](https://gatsby-mdx.netlify.com/) is also supported! <br /> To overwrite this index.mdx just create another index file in your pages folder.
 
 <div>
-  <code>Total Count: {props.data.allSitePage.totalCount}</code>
+  <h3><code>All your current pages: {props.data.allSitePage.totalCount}</code></h3>
 </div>
 
 <div>
   <code>
   {props.data.allSitePage.edges.map(({ node }, i) => (
     <Link to={node.path} key={props.i}>
-      <p style={{ backgroundColor: '#fafbfc' }}>{node.path}</p>
+      <p style={{ backgroundColor: '#eeeeee', padding: "4px 10px" }}>{node.path}</p>
     </Link>
   ))}
   </code>
