@@ -1,15 +1,12 @@
 {
   "name": "gatsby-theme-prismic-starter",
   "description": "A Gatsby Starter Theme With Prismic CMS",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "Dennis Kossowski <development@denniskossowski.de> (https://denniskossowski.de/)",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "@fortawesome/fontawesome-svg-core": "^1.2.17",
-    "@fortawesome/free-solid-svg-icons": "^5.8.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
     "@mdx-js/mdx": "^1.0.16",
     "@mdx-js/react": "^1.0.16",
     "@mdx-js/tag": "^0.20.3",
@@ -20,7 +17,6 @@
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-manifest": "^2.0.29",
-    "gatsby-plugin-netlify": "^2.0.15",
     "gatsby-plugin-page-creator": "^2.0.12",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.35",
@@ -31,7 +27,6 @@
     "gatsby-transformer-sharp": "^2.1.18",
     "mkdirp": "^0.5.1",
     "prop-types": "^15.7.2",
-    "react-grid-system": "^4.4.5",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
@@ -51,11 +46,13 @@
     "gatsby",
     "theme",
     "gatsby-theme",
-    "prismic"
+    "prismic",
+    "react",
+    "mdx"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kossowski/gatsby-theme-prismic-starter"
+    "url": "https://github.com/kossowski/gatsby-theme-prismic-starter"
   }
 }
